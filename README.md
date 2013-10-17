@@ -45,7 +45,9 @@ The following ideas are employed:
 BENCHMARK
 ---------
 
-This benchmark is run on a single core on an Intel Core i7 860.
+This benchmark is run on a single core on an Intel Core i7 860. It's run
+with a reasonably large packet capture of HTTP traffic, containing lots
+of images, so it's quite hard to compress.
 
     HeaderCompression + LZ4 + Dictionary:
     Compress:   442.423798 MB/s.
