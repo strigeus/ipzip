@@ -305,6 +305,12 @@ Ipzip *IpzipCreate(void) {
   return ipzip;
 }
 
+void IpzipDestroy(Ipzip *ipzip) {
+
+	if(ipzip == NULL) return;
+	free(ipzip);
+}
+
 static int IpzipCompressBuffer(Ipzip *ipzip, const unsigned char *source, unsigned char *dest,
                                int inputSize, int flags) {
   U32 ctx[IPZIP_LZ4_BUFFER_SIZE/4];
